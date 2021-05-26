@@ -1,0 +1,440 @@
+body {
+	font-family: "Bebas Neue", Tahoma, Verdana;
+	margin:0;
+	padding:0;
+}
+
+
+footer {
+	background-color: blue;
+	text-align: center;
+	color: white;
+	padding:1%;
+	margin-top: 1%;
+	margin-left: 0;
+	margin-right: 0;
+	box-shadow: 0px -5px 10px gray;
+}
+
+
+h2 {
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-size: 500%;
+	line-height: 70px;
+}
+
+.header {
+	background-color: blue;
+	color: white;
+	box-shadow: 0px 10px 10px gray;
+	padding:2%;
+}
+
+#navlist {
+	display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+
+#navlist:after {
+	display: inline-block;
+	width:100%;
+}
+
+#navlist li {
+	display:block;
+	flex: 0 1 auto;
+	list-style: none;
+	font-size: 150%;
+}
+
+#navlist li a {
+	text-decoration: none;
+	color: white;
+}
+
+#navlist li a:link { 
+	color: white; 
+}
+
+#navlist li a:hover{
+	color: red;
+}
+
+#navlist li a#current{
+	color:red;
+}
+
+.quote {
+	font-size: 200%;
+}
+
+.logo {
+	text-align: center;
+}
+
+#GingerBio {
+	float: left;
+	margin-right:10%;
+	box-shadow: 0px 10px 10px gray;
+}
+
+#BaileyBio {
+	float:right;
+	margin-left:4%;
+	box-shadow: 0px 10px 10px gray;
+
+}
+
+.bio {
+	text-align: justify;
+	font-size: 150%;
+	padding-right:5%;
+	overflow:hidden;
+	padding-bottom:2%;
+}
+
+section {
+	padding: 4%;
+	overflow: hidden;
+}
+
+.right-aligned {
+	text-align: right;
+}
+
+
+.linkButton {
+	color:white;
+	width:50%;
+	border: none;
+	font-size: 120%;
+	padding-top:4%;
+	padding-bottom:4%;
+	box-shadow: 0px 10px 10px gray;
+}
+
+.linkButton:hover {
+	box-shadow: none;
+}
+
+#poll{
+	background-color: blue;
+	float:right;
+}
+
+#register{
+	background-color: red;
+	float:left;
+}
+
+.divider{
+	width:100%;
+	text-align:center;
+}
+
+.slide {
+	display:none;
+	align-content: center;
+	margin: 0 auto;
+	padding-top:4%;
+}
+
+.slide figcaption{
+	padding-top:4%;
+	text-align: center;
+}
+
+.slidepic{
+	display: block;
+	box-shadow: 0px 10px 10px gray;
+	margin: 0 auto;
+}
+
+.slideButton {
+	margin: 2%;
+	border:none;
+	background-color: red;
+	padding:1%;
+	color:white;
+	font-size: 110%;
+	box-shadow: 0px 10px 10px gray;
+}
+
+.button-holder {
+	text-align: center;
+}
+
+iframe {
+	float: left;
+	box-shadow: 0px 10px 10px gray;
+	margin-right:5%;
+}
+
+.news {
+	overflow: hidden;
+	margin-top:2%;
+	margin-bottom:2%;
+	font-size: 120%;
+
+}
+
+.floatRight {
+	float: right;
+	box-shadow: 0px 10px 10px gray;
+	margin-left:2%;
+	margin-bottom:2%;
+}
+
+.floatLeft {
+	float: left;
+	box-shadow: 0px 10px 10px gray;
+	margin-right: 4%;
+}
+
+textarea {
+  width: 500px;
+  height: 150px;
+}
+
+.submit{
+	color:white;
+	width:15%;
+	border: none;
+	font-size: 120%;
+	padding-top:1%;
+	padding-bottom:1%;
+	box-shadow: 0px 10px 10px gray;
+	background-color:red;
+}
+
+.typeField{
+	border-color: blue;
+	border-width: thick;
+}
+
+.big{
+	font-size: 200%;
+	text-align: justify;
+}
+
+.exp{
+	font-size: 150%;
+	text-align: justify;
+}
+
+
+.buttonBox{
+	padding-left:0;
+	padding-right:0;
+	overflow:hidden;
+}
+
+.contact{
+	float:left;
+}
+
+form{
+	font-size: 150%;
+}
+
+.regal{
+	float:right;
+}
+
+.gingey {
+  	position: relative;
+  	width: 50%;
+  	margin:0;
+	padding:0;
+	width:100%;
+}
+
+.image {
+  	display: block;
+  	width: 100%;
+  	height: auto;
+}
+
+.overlay {
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	height: 100%;
+  	width: 100%;
+  	opacity: 0;
+  	transition: .5s ease;
+  	background-color: gray;
+}
+
+.gingery:hover .overlay {
+  	opacity: 1;
+}
+
+.text {
+  	color: white;
+  	font-size: 20px;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	-webkit-transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+	
+	.regal{
+		display:none;
+	}
+
+	.gingey{
+		display:none;
+	}
+
+	#navlist {
+		text-align: justify;
+		padding: 3px 0;
+		margin-left: 0;
+	}
+
+	#navlist:after {
+	}
+
+	#navlist li {
+		list-style: none;
+		margin: 0;
+		font-size: 110%;
+	}
+
+	#navlist li a {
+		padding: 3px 0.5em;
+		margin-left: 3px;
+		text-decoration: none;
+	}
+
+
+	.slideButton {
+		margin: 2%;
+		border:none;
+		background-color: red;
+		padding-top:1%;
+		padding-bottom:1%;
+		padding-right:25%;
+		padding-left:25%;
+		color:white;
+		font-size: 110%;
+		box-shadow: 0px 10px 10px gray;
+	}
+
+	#BaileyBio{
+		float:none;
+	}
+
+	#GingerBio{
+		float:none;
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	.divider{
+		width:100%;
+		align-content: center;
+	}
+
+	h2 {
+		font-family: 'Raleway', Helvetica, Arial, sans-serif;
+		font-size: 400%;
+		line-height: 70px;
+	}
+
+	.floatLeft {
+		float:none;
+		margin-left:0;
+	}
+
+	figure{
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+
+	.floatRight {
+		float:none;
+		margin-left:0;
+	}
+
+	iframe{
+		width:90%;
+		margin-bottom:4%;
+		align-content: center;
+	}
+
+
+	#BaileyBio{
+		float:none;
+		width:75%;
+		align-content: center;
+	}
+
+	#GingerBio{
+		width:75%;
+		float:none;
+		align-content: center;
+	}
+
+	.regal{
+		display:none;
+	}
+
+	.gingey{
+		display:none;
+	}
+
+	#navlist {
+		text-align: justify;
+		padding: 3px 0;
+		margin-left: 0;
+	}
+
+	#navlist:after {
+	}
+
+	#navlist li {
+		list-style: none;
+		margin: 0;
+		font-size: 110%;
+	}
+
+	#navlist li a {
+		padding: 3px 0.5em;
+		margin-left: 3px;
+		text-decoration: none;
+	}
+
+
+	#navlist li a#current{
+		color: red;
+	}
+
+	.slideButton {
+		margin: 2%;
+		border:none;
+		background-color: red;
+		padding-top:1%;
+		padding-bottom:1%;
+		padding-right:25%;
+		padding-left:25%;
+		color:white;
+		font-size: 110%;
+		box-shadow: 0px 10px 10px gray;
+	}
+}
